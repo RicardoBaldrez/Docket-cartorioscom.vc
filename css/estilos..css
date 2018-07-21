@@ -1,0 +1,241 @@
+:root {
+    --corAzul: #0081b9;
+}
+body {
+    overflow-x: hidden;
+    font-family: 'PT Sans', sans-serif;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Nav-bar */
+.nav {
+    height: 65px;
+    padding: 10px;
+    z-index: 1;
+}
+.nav .nav-links {
+    width: 19%;
+}
+.nav, .nav-links {
+    display: flex;
+    justify-content: space-between;
+}
+.nav .nav-links .nav-link {
+    display: flex;
+    align-items: center;
+}
+.nav .nav-links .nav-link .link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 100%;
+    color: rgba(0, 0, 0,.8);
+    padding-bottom: 4px;
+    border-bottom: 2px solid lightgray;
+    transition: border-bottom.3s ease-in-out;
+    -webkit-transition: border-bottom.3s ease-in-out;
+    -moz-transition: border-bottom.3s ease-in-out;
+    -ms-transition: border-bottom.3s ease-in-out;
+    -o-transition: border-bottom.3s ease-in-out;
+}
+.nav .nav-links .nav-link .link:hover {
+    border-bottom: 2px solid var(--corAzul);
+}
+
+/* Sessão com carousel*/
+.section-carousel {
+    width: 100%;
+    height: 550px;
+    background-image: url('../img/fundo-sessaoCarousel.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 1px solid rgb(197, 197, 197);
+}
+
+/* Sessão Nossas Soluções */
+.content_nossas-solucoes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.titulo_nossasSolucoes {
+    font-size: 265%;
+    font-weight: bold;
+    color: var(--corAzul);
+    text-align: center;
+    margin: 50px 0;
+}
+.content_nossas-solucoes .bloco {
+    box-sizing: border-box;
+    border: 1px solid rgba(211, 211, 211, 0.432);
+    display: block;
+    width: 30%;
+    height: auto;
+    padding: 15px;
+    float: left;
+    color: var(--corAzul);
+}
+.icon-foot, .icon-heart, .icon-siren {
+    width: 70px;
+    height: 70px;
+    margin: 10px 0 45px 50%;
+    transform:  translateX(-50%);
+    -webkit-transform:  translateX(-50%);
+    -moz-transform:  translateX(-50%);
+    -ms-transform:  translateX(-50%);
+    -o-transform:  translateX(-50%);
+}
+.bloco .sub-titulo {
+    font-size: 170%;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.bloco .sub-titulo .enfase_sub-titulo {
+    font-weight: bold;
+}
+.bloco .paragrafo-bloco {
+    text-align: center;
+    padding: 10px 5px;
+    margin-bottom: 25px;
+}
+.bloco .botao-solicita {
+    background: var(--corAzul);
+    display: block;
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: .5px;
+}
+.bloco .botao-solicita:hover {
+    opacity: .8;
+}
+
+/* Carousel */
+.mySlides {display: none}
+.image-carousel {
+    vertical-align: middle;
+    width: 45%;
+    height: 300px;
+    padding: 50px;
+    margin-left: 45%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: var(--corAzul);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: var(--corAzul);
+}
+
+.mySlides .botao_solicitaCarousel {
+    background: var(--corAzul);
+    display: block;
+    text-align: center;
+    width: 20%;
+    padding: 20px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: .5px;
+    margin-left: 60%;
+    margin-bottom: 20px;
+}
+
+.mySlides .botao_solicitaCarousel:hover {
+    opacity: .8;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
